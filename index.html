@@ -1,103 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AcciPredict - Previsão e Classificação de Acidentes de Trânsito</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/explicacao.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Previsão</a></li>
-                <li><a href="classificacao.html">Classificação</a></li>
-                <li><a href="base.html">Fonte dos Dados</a></li>
-            </ul>
-        </nav>
+    <header class="cabecalho">
+        <div class="cabecalho-esquerda">
+            <img src="./assets/images/logo_fatalitypredict.png" alt="PausePro logo" class="logo">
+        </div>
+        <div class="cabecalho-centro">
+            <li id="lista-nav">
+                <a href="index.html" id="link-index" class="links-nav">Base de Dados</a>
+            </li>
+            <li id="lista-nav">
+                <a href="./pages/previsao.html" class="links-nav">Previsão de Fatalidade</a>
+            </li>
+        </div>
+        <div class="cabecalho-direita">
+        </div>
     </header>
 
-    <section class="news-carousel">
-        <div class="carrossel-interno-login">
-            <div class="item-carrossel-login">
-                <img src="https://cdn.pixabay.com/photo/2016/03/11/02/08/speedometer-1249610_1280.jpg" alt="Acidente 1">
-                <div class="carousel-caption">
-                    <h3>Acidente Fatal em Rodovia Principal</h3>
-                    <p>Um grave acidente ocorrido na rodovia X resultou na morte de duas pessoas e deixou outras três feridas.</p>
+    <main>
+        <section class="container-explicacao">
+            <h1 class="titulo-principal">Levantamento de Dados dos Acidentes de Trânsito no Brasil</h1>
+
+            <p class="paragrafo-intro">
+                Este documento apresenta uma análise exploratória de dados (EDA) sobre acidentes de trânsito no Brasil,
+                com o objetivo de fornecer insights para autoridades de trânsito, pesquisadores e o público interessado
+                em segurança viária. Os dados incluem informações sobre veículos, condutores, passageiros e a severidade
+                dos acidentes.
+            </p>
+
+            <div class="grid-explicacao">
+                <div class="card-explicacao">
+                    <h2 class="titulo-secundario">Principais Insights</h2>
+                    <ul class="lista-explicacao">
+                        <li class="item-explicacao">Acidentes “NÃO FATAL” e “SEM FERIMENTOS” são predominantes.</li>
+                        <li class="item-explicacao">Motocicletas e automóveis são os veículos mais envolvidos.</li>
+                        <li class="item-explicacao">Condutores do sexo masculino, entre 20 e 40 anos, são maioria.</li>
+                    </ul>
+                </div>
+
+                <div class="card-explicacao">
+                    <h2 class="titulo-secundario">Recomendações</h2>
+                    <ul class="lista-explicacao">
+                        <li class="item-explicacao">Campanhas de conscientização para motociclistas.</li>
+                        <li class="item-explicacao">Programas educacionais para jovens condutores.</li>
+                        <li class="item-explicacao">Maior fiscalização da habilitação de condutores.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="item-carrossel-login">
-                <img src="https://cdn.pixabay.com/photo/2016/03/11/02/08/speedometer-1249610_1280.jpg" alt="Acidente 2">
-                <div class="carousel-caption">
-                    <h3>Colisão entre Carros Causa Engarrafamento</h3>
-                    <p>Uma colisão entre dois carros no centro da cidade causou um engarrafamento que durou mais de 3 horas.</p>
-                </div>
+
+            <div class="card-explicacao">
+                <h2 class="titulo-secundario">Fatores de Risco</h2>
+                <ul class="lista-explicacao">
+                    <li class="item-explicacao">O não uso de cinto de segurança está associado a acidentes mais graves.
+                    </li>
+                    <li class="item-explicacao">Embriguez ao volante, embora pouco frequente, agrava os acidentes.</li>
+                </ul>
             </div>
-            <div class="item-carrossel-login">
-                <img src="https://cdn.pixabay.com/photo/2016/03/11/02/08/speedometer-1249610_1280.jpg" alt="Acidente 3">
-                <div class="carousel-caption">
-                    <h3>Acidente com Caminhão Deixa Trânsito Parado</h3>
-                    <p>Um caminhão tombou na estrada Y, bloqueando totalmente o tráfego. Felizmente, o motorista saiu ileso.</p>
-                </div>
+
+            <div class="card-explicacao">
+                <h2 class="titulo-secundario">Conclusão</h2>
+                <p class="paragrafo-final">
+                    Esta análise preliminar destaca áreas cruciais para ações preventivas, visando reduzir os acidentes
+                    de trânsito e promover maior segurança nas vias brasileiras. A melhoria na coleta de dados e
+                    análises mais aprofundadas são essenciais para estratégias eficazes.
+                </p>
             </div>
-            <div class="item-carrossel-login">
-                <img src="https://cdn.pixabay.com/photo/2016/03/11/02/08/speedometer-1249610_1280.jpg" alt="Acidente 4">
-                <div class="carousel-caption">
-                    <h3>Motorista Perde Controle e Colide com Árvore</h3>
-                    <p>O motorista perdeu o controle de seu carro e colidiu com uma árvore, mas foi socorrido com ferimentos leves.</p>
-                </div>
-            </div>
-            <div class="item-carrossel-login">
-                <img src="https://cdn.pixabay.com/photo/2016/03/11/02/08/speedometer-1249610_1280.jpg" alt="Acidente 5">
-                <div class="carousel-caption">
-                    <h3>Acidente de Trânsito Resulta em Duas Vítimas Fatais</h3>
-                    <p>Dois veículos colidiram frontalmente na estrada Z, resultando em duas vítimas fatais. As autoridades estão investigando.</p>
-                </div>
+
+        </section>
+    </main>
+
+
+    <section class="container-carrossel-maior">
+        <div class="container-carrossel swiper">
+            <div class="wrapper-carrossel">
+                <ul class="carrossel-list swiper-wrapper">
+                    <li class="carrossel-item swiper-slide">
+                        <a href="#" class="carrossel-link">
+                            <img src="https://cdn.pixabay.com/photo/2016/03/11/02/08/speedometer-1249610_1280.jpg"
+                                alt="Notícia 1" class="carrossel-imagem">
+                            <p class="carrossel-titulo">Acidente Fatal em Rodovia Principal</p>
+                            <h2 class="carrossel-noticia">Um grave acidente ocorrido na rodovia X resultou na morte de duas
+                                pessoas e deixou outras três feridas.</h2>
+                            <button class="carrossel-button">&#8618;</button>
+                        </a>
+                    </li>
+                    <li class="carrossel-item swiper-slide">
+                        <a href="#" class="carrossel-link">
+                            <img src="https://cdn.pixabay.com/photo/2021/01/15/23/27/traffic-light-5920765_960_720.jpg"
+                                alt="Notícia 2" class="carrossel-imagem">
+                            <p class="carrossel-titulo">Colisão entre Carros Causa Engarrafamento</p>
+                            <h2 class="carrossel-noticia">Uma colisão entre dois carros no centro da cidade causou um
+                                engarrafamento que durou mais de 3 horas.</h2>
+                            <button class="carrossel-button">&#8618;</button>
+                        </a>
+                    </li>
+                    <li class="carrossel-item swiper-slide">
+                        <a href="#" class="carrossel-link">
+                            <img src="https://cdn.pixabay.com/photo/2015/02/13/10/18/stop-634941_960_720.jpg"
+                                alt="Notícia 3" class="carrossel-imagem">
+                            <p class="carrossel-titulo">Acidente com Caminhão Deixa Trânsito Parado</p>
+                            <h2 class="carrossel-noticia">Um caminhão tombou na estrada Y, bloqueando totalmente o tráfego.
+                                Felizmente, o motorista saiu ileso.</h2>
+                            <button class="carrossel-button">&#8618;</button>
+                        </a>
+                    </li>
+                    <li class="carrossel-item swiper-slide">
+                        <a href="#" class="carrossel-link">
+                            <img src="https://cdn.pixabay.com/photo/2019/01/17/19/11/bridge-3938436_960_720.jpg"
+                                alt="Notícia 4" class="carrossel-imagem">
+                            <p class="carrossel-titulo">Motorista Perde Controle e Colide com Árvore</p>
+                            <h2 class="carrossel-noticia">O motorista perdeu o controle de seu carro e colidiu com uma
+                                árvore, mas foi socorrido com ferimentos leves.</h2>
+                            <button class="carrossel-button">&#8618;</button>
+                        </a>
+                    </li>
+                    <li class="carrossel-item swiper-slide">
+                        <a href="#" class="carrossel-link">
+                            <img src="https://cdn.pixabay.com/photo/2019/09/07/13/45/professional-transport-4458797_960_720.jpg"
+                                alt="Notícia 5" class="carrossel-imagem">
+                            <p class="carrossel-titulo">Acidente de Trânsito Resulta em Duas Vítimas Fatais</p>
+                            <h2 class="carrossel-noticia">Dois veículos colidiram frontalmente na estrada Z, resultando em
+                                duas vítimas fatais. As autoridades estão investigando.</h2>
+                            <button class="carrossel-button">&#8618;</button>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
-        <button class="carrossel-login-anterior">&#10094;</button>
-        <button class="carrossel-login-proximo">&#10095;</button>
     </section>
-    
-    <main class="prediction-form">
-        <h2>Previsão de Acidente de Trânsito</h2>
-        <p>Preencha os detalhes abaixo para prever o risco de um acidente na área escolhida.</p>
-    
-        <form id="accidentPredictionForm">
-            <div class="form-group">
-                <label for="location">Localização:</label>
-                <input type="text" id="location" name="location" placeholder="Informe a cidade ou rodovia" required>
-            </div>
-    
-            <div class="form-group">
-                <label for="weather">Condições Meteorológicas:</label>
-                <select id="weather" name="weather" required>
-                    <option value="">Selecione...</option>
-                    <option value="sunny">Ensolarado</option>
-                    <option value="rainy">Chuvoso</option>
-                    <option value="foggy">Nebuloso</option>
-                    <option value="snowy">Nevando</option>
-                </select>
-            </div>
-    
-            <div class="form-group">
-                <label for="time">Hora do Dia:</label>
-                <select id="time" name="time" required>
-                    <option value="">Selecione...</option>
-                    <option value="morning">Manhã</option>
-                    <option value="afternoon">Tarde</option>
-                    <option value="evening">Noite</option>
-                    <option value="night">Madrugada</option>
-                </select>
-            </div>
-            <button type="submit" id="prever">Prever Acidente</button>
-        </form>
-    </main>
-    
+
     <footer>
         <div class="footer-content">
-            <p>AcciPredict&copy; 2025. Todos os direitos reservados.</p>
+            <p>FatalityPredict&copy; 2025. Todos os direitos reservados.</p>
             <ul>
                 <li><a href="#">Sobre nós</a></li>
                 <li><a href="#">Política de Privacidade</a></li>
@@ -106,6 +154,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
+
 </html>
