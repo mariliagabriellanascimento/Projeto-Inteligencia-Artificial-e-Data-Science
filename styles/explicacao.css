@@ -73,7 +73,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .wrapper-carrossel {
@@ -88,7 +88,7 @@
 }
 
 .carrossel-list .carrossel-item .carrossel-link {
-    user-select: none;
+    /* user-select: none; */
     display: block;
     background: linear-gradient(#ffe5e5, #f8caca, #fddede);
     padding: 18px;
