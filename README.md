@@ -42,7 +42,7 @@ O dataset contém **22.644 registros de acidentes** ocorridos no Brasil em 2020,
 
 ## Motivação
 
-Os acidentes de trânsito representam uma das principais causas de mortes no mundo. A análise desses dados pode ser uma ferramenta poderosa para a criação de políticas públicas de segurança viária mais eficazes. Através da modelagem preditiva e da análise dos acidentes, nosso objetivo é contribuir com soluções que possam **reduzir o número de vítimas** e promover mais segurança para motoristas e pedestres.
+Os acidentes de trânsito representam uma das principais causas de mortes no mundo. A análise desses dados pode ser uma ferramenta poderosa para a criação de políticas públicas de segurança viária mais eficazes. Através da modelagem preditiva e da análise das fatalidades dos acidentes, nosso objetivo é contribuir com soluções que possam **reduzir o número de vítimas** e promover mais segurança para motoristas e pedestres.
 
 ## Próximos Passos
 
